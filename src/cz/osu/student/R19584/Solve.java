@@ -10,8 +10,6 @@ public class Solve {
 
     public static void problem(long id) {
         if(id < 100) Solve_0XX.problem(id);
-        if(id == 206) Problem_206.main();
-        if(id == 684) Problem_684.main();
     }
 
 }
