@@ -14,7 +14,6 @@ import cz.osu.student.R19584.Problem_0XX.Problem_09X.Solve_09X;
 public class Solve_0XX {
 
     public static void all() {
-
         Solve_00X.all();
         Solve_01X.all();
         Solve_02X.all();
@@ -23,9 +22,8 @@ public class Solve_0XX {
         Solve_05X.all();
         Solve_06X.all();
         Solve_07X.all();
-        Solve_08X.all();
-        Solve_09X.all();
-
+        //Solve_08X.all();
+        //Solve_09X.all();
     }
 
     public static void problem(long id) {
@@ -40,5 +38,4 @@ public class Solve_0XX {
         else if(id < 90) Solve_08X.problem(id);
         else if(id < 100) Solve_09X.problem(id);
     }
-
 }
