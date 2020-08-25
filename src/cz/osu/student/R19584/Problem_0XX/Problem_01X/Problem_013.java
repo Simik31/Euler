@@ -2,6 +2,12 @@ package cz.osu.student.R19584.Problem_0XX.Problem_01X;
 
 import java.math.BigInteger;
 
+/*
+
+Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
+
+ */
+
 public class Problem_013 {
     public static long main() {
         String[] data = new String[] {
