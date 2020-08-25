@@ -1,5 +1,13 @@
 package cz.osu.student.R19584.Problem_0XX.Problem_00X;
 
+/*
+
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+ */
+
 public class Problem_005 {
     public static long main() {
         for(long number = 20; ; number += 20)
