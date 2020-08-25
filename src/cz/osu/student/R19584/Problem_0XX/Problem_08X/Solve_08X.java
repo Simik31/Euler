@@ -1,5 +1,7 @@
 package cz.osu.student.R19584.Problem_0XX.Problem_08X;
 
+import SharedCodeBase.COLOR;
+
 import java.util.Date;
 
 public class Solve_08X {
@@ -9,6 +11,7 @@ public class Solve_08X {
     }
 
     public static void problem(long id) {
+        String color = COLOR.GREEN;
         long time, answer = -1, start_time = new Date().getTime();
         if (id == 80) answer = Problem_080.main();
         else if (id == 81) answer = Problem_081.main();
@@ -21,6 +24,8 @@ public class Solve_08X {
         else if (id == 88) answer = Problem_088.main();
         else if (id == 89) answer = Problem_089.main();
         time = new Date().getTime() - start_time;
-        System.out.printf("[*] Problem %,3d:  %,15d\t[Time %s: %4dms]\n", id, answer, (time > 1000 ? ">>" : "OK"), time);
+        if(time > 999) color = COLOR.ORANGE;
+        else if(time > 499) color = COLOR.YELLOW;
+        System.out.printf("[*] Problem %,3d:  %,21d\t%s[Time %s: %4dms]%s\n", id, answer, color, (time > 1000 ? ">>" : "OK"), time, COLOR.RESET);
     }
 }
